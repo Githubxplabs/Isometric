@@ -1,4 +1,4 @@
-package me.xplabs.gemo 
+package me.xplabs.isometric.gemo 
 {
 	/**
 	 * ...

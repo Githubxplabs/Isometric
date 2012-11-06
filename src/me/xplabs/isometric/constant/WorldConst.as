@@ -1,4 +1,4 @@
-package me.xplabs.constant 
+package me.xplabs.isometric.constant 
 {
 	/**
 	 * ...

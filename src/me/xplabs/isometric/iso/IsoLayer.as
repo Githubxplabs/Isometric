@@ -1,8 +1,8 @@
-package me.xplabs.iso 
+package me.xplabs.isometric.iso 
 {
-	import me.xplabs.interfance.IIsoObject;
-	import me.xplabs.interfance.IIsoLayer;
-	import me.xplabs.interfance.ISortable;
+	import me.xplabs.isometric.interfance.IIsoLayer;
+	import me.xplabs.isometric.interfance.IIsoObject;
+	import me.xplabs.isometric.interfance.ISortable;
 	
 	/**
 	 * ...

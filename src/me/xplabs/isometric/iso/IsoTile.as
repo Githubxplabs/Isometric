@@ -1,8 +1,8 @@
-package me.xplabs.iso 
+package me.xplabs.isometric.iso 
 {
 	import flash.utils.Dictionary;
-	import me.xplabs.interfance.IIsoObject;
-	import me.xplabs.interfance.IIsoTile;
+	import me.xplabs.isometric.interfance.IIsoObject;
+	import me.xplabs.isometric.interfance.IIsoTile;
 	/**
 	 * ...
 	 * @author xiaohan

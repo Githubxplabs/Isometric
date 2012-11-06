@@ -4,11 +4,11 @@ package
 	import flash.events.Event;
 	import flash.geom.Point;
 	import flash.utils.getTimer;
-	import me.xplabs.interfance.IIsoObject;
-	import me.xplabs.iso.IsoLayer;
-	import me.xplabs.iso.IsoObject;
-	import me.xplabs.iso.IsoWorld;
-	import me.xplabs.utils.Isometric;
+	import me.xplabs.isometric.interfance.IIsoObject;
+	import me.xplabs.isometric.iso.IsoLayer;
+	import me.xplabs.isometric.iso.IsoObject;
+	import me.xplabs.isometric.iso.IsoWorld;
+
 	
 	/**
 	 * ...
