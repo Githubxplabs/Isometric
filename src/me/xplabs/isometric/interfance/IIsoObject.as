@@ -34,7 +34,7 @@ package me.xplabs.isometric.interfance
 		function get walkable():Boolean;
 		function set walkable(value:Boolean):void;
 		/**
-		 * 元素类型
+		 * 地图区块元素类型
 		 */
 		function get objType():int;
 		function set objType(value:int):void;

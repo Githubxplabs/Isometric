@@ -35,27 +35,33 @@ package me.xplabs.isometric.iso
 		}
 		
 		/* INTERFACE me.xplabs.interfance.IIsoObject */
-		
+		/**
+		 * x轴向的3d坐标
+		 */		
 		public function get x():Number 
 		{
 			return _x;
 		}
-		
 		public function set x(value:Number):void 
 		{
 			_x = value;
 		}
-		
+	   /**
+		* y轴线的3d坐标
+		*/
 		public function get y():Number 
 		{
 			return _y;
 		}
-		
+	
 		public function set y(value:Number):void 
 		{
 			_y = value;
 		}
 		
+	   /**
+		* z轴线的3d坐标
+		*/
 		public function get z():Number 
 		{
 			return _z;
@@ -65,7 +71,9 @@ package me.xplabs.isometric.iso
 		{
 			_z = value;
 		}
-		
+		/**
+		 * 3d坐标点
+		 */		
 		public function get point3d():Point3D 
 		{
 			return _point3d;
@@ -75,7 +83,9 @@ package me.xplabs.isometric.iso
 		{
 			_point3d = value;
 		}
-		
+		/**
+		 * 是否为障碍
+		 */		
 		public function get walkable():Boolean 
 		{
 			return _walkable;
@@ -85,7 +95,9 @@ package me.xplabs.isometric.iso
 		{
 			_walkable = value;
 		}
-		
+		/**
+		 * 地图区块元素类型
+		 */		
 		public function get objType():int 
 		{
 			return _objType;
@@ -95,7 +107,10 @@ package me.xplabs.isometric.iso
 		{
 			_objType = value;
 		}
-		
+		/**
+		 * 坐标点发生变化的回调
+		 * @param	call 需要被回调的函数
+		 */
 		public function pointAddObservers(call:Function):void 
 		{
 			
@@ -107,6 +122,13 @@ package me.xplabs.isometric.iso
 		}
 		
 		
+	   /**
+		* 显示对象，指定的显示对象必须包含父级属性parent
+		*/
+		public function get displayObject():Object 
+		{
+			return _displayObject;
+		}
 		public function set displayObject(value:Object):void 
 		{
 			if (!value.hasOwnProperty("parent"))
@@ -118,80 +140,86 @@ package me.xplabs.isometric.iso
 			
 		}
 		
-		
-		public function get displayObject():Object 
-		{
-			return _displayObject;
-		}
-		
+	   /**
+		* 层级类型
+		*/		
+	   public function get layerType():int 
+	   {
+		   return _layerType;
+	   }
+	   
+	   public function set layerType(value:int):void 
+	   {
+		   _layerType = value;
+	   }
+	   /**
+		* 上次的横向格子索引
+		*/		
+	   public function get prevRow():int 
+	   {
+		   return _prevRow;
+	   }
+	   
+	   public function set prevRow(value:int):void 
+	   {
+		   _prevRow = value;
+	   }
+	   /**
+		* 上次的纵向格子索引 
+		*/		
+	   public function get prevCol():int 
+	   {
+		   return _prevCol;
+	   }
+	   
+	   public function set prevCol(value:int):void 
+	   {
+		   _prevCol = value;
+	   }
+		/**
+		 * z轴向的格子索引
+		 */	   
 		public function set col(value:int):void 
 		{
 			_col = value;
 		}
-		
-		public function set row(value:int):void 
-		{
-			_row = value;
-		}
-		
-		public function set cols(value:int):void 
-		{
-			_cols = value;
-		}
-		
-		public function set rows(value:int):void 
-		{
-			_rows = value;
-		}
-		
-		public function get layerType():int 
-		{
-			return _layerType;
-		}
-		
-		public function set layerType(value:int):void 
-		{
-			_layerType = value;
-		}
-		
-		public function get prevRow():int 
-		{
-			return _prevRow;
-		}
-		
-		public function set prevRow(value:int):void 
-		{
-			_prevRow = value;
-		}
-		
-		public function get prevCol():int 
-		{
-			return _prevCol;
-		}
-		
-		public function set prevCol(value:int):void 
-		{
-			_prevCol = value;
-		}
-		
 		public function get col():int 
 		{
 			return _col;
+		}
+		/**
+		 * x轴向的格子索引
+		 */		
+		public function set row(value:int):void 
+		{
+			_row = value;
 		}
 		
 		public function get row():int 
 		{
 			return _row;
 		}
-		
+		/**
+		 * z轴向所占的格子数量
+		 */		
 		public function get cols():int 
 		{
 			return _cols;
 		}
-		
+		public function set cols(value:int):void 
+		{
+			_cols = value;
+		}
+		/**
+		 * x轴向所占的格子数量
+		 */		
 		public function get rows():int 
 		{
 			return _rows;
+		}
+		public function set rows(value:int):void 
+		{
+			_rows = value;
 		}
 		
 	}

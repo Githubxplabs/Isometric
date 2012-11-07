@@ -18,7 +18,9 @@ package me.xplabs.isometric.iso
 		}
 		
 		/* INTERFACE me.xplabs.interfance.ILayer */
-		
+		/**
+		 * 对层级内的等角对象进行排序
+		 */
 		public function sort():void 
 		{
 			var list:Vector.<IIsoObject> = _containers.slice(0);
@@ -47,12 +49,18 @@ package me.xplabs.isometric.iso
 				_container.addChildAt(_containers[i].displayObject, i);
 			}
 		}
-		
+		/**
+		 * 添加对象到层
+		 * @param	isoObject 需要被添加的等角对象
+		 */		
 		public function addChild(isoObject:IIsoObject):void 
 		{
 			_containers[_containers.length] = isoObject;
 		}
-		
+		/**
+		 * 从层中删除
+		 * @param	isoObject 需要被删除的等角对象 
+		 */		
 		public function removeChild(isoObject:IIsoObject):void 
 		{
 			var len:int = _containers.length;

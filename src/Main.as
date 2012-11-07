@@ -4,6 +4,7 @@ package
 	import flash.events.Event;
 	import flash.geom.Point;
 	import flash.utils.getTimer;
+	import me.xplabs.isometric.astar.AStar;
 	import me.xplabs.isometric.interfance.IIsoObject;
 	import me.xplabs.isometric.iso.IsoLayer;
 	import me.xplabs.isometric.iso.IsoObject;
@@ -30,12 +31,6 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			
-			var world:IsoWorld = new IsoWorld(10,10);
-			var layer:IsoLayer = new IsoLayer();
-			world.registerLayer(1, layer);
-			var obj:IIsoObject = new IsoObject(1, new Sprite());
-			world.addChildToWorld(obj);
 		}
 	
 	}
