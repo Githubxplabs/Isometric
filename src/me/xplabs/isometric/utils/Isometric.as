@@ -1,7 +1,7 @@
 package me.xplabs.isometric.utils 
 {
 	import flash.geom.Point;
-	import me.xplabs.gemo.Point3D;
+	import me.xplabs.isometric.gemo.Point3D;
 	/**
 	 * ...
 	 * @author xiaohan
